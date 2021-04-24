@@ -13,4 +13,4 @@ pipeline{
    	 }
     }
 }
-artifacts .*
+artifacts ☝️
