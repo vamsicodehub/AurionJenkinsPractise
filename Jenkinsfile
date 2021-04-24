@@ -4,14 +4,14 @@ pipeline{
 
     stage('build'){
     steps{
-    echo “Running ${env.BUILD_ID}”
+    echo â€œRunning ${env.BUILD_ID}â€
     sh 'ant -f build.xml -v'
     }
     }
     }
     post {
    	 always{
-   		 archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
+   		 archiveArtifacts artifacts: 'dist/*.jar'
    	 }
     }
 }
