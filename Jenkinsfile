@@ -4,7 +4,7 @@ pipeline{
 
     stage('build'){
     steps{
-    echo "Running via  ${env.BUILD_ID}"
+    echo "Running by  ${env.BUILD_ID}"
     sh 'ant -f build.xml -v'
     }
     }
